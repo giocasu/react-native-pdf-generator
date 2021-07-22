@@ -36,7 +36,7 @@ public class PDFtoBase64 {
 
     public PDFtoBase64(PDFStore store) {
         this.store = store;
-        PrintAttributes.MediaSize mediaSize = pageType.asLandscape();
+        PrintAttributes.MediaSize mediaSize = pageType.asPortrait();
 
          attributes = new PrintAttributes.Builder()
                 .setMediaSize(mediaSize)
